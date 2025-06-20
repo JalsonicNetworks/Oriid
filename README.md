@@ -2,7 +2,6 @@
 
 **Oriid** is a blazing-fast, high-throughput JavaScript library for generating **unique, 10-character alphanumeric IDs** at a rate of **20 million+ per second**, using only the characters `a-z`, `A-Z`, and `0-9`.
 
----
 
 ## 🔥 Why Oriid?
 
@@ -19,7 +18,6 @@ Traditional ID generators like MongoDB’s ObjectId or MySQL’s AUTO_INCREMENT 
 | Works offline            | ✅ Yes       | ❌ No             | ❌ No |
 | Distributed-safe         | ✅ Yes       | ⚠️ Needs config   | ❌ Hard to scale |
 
----
 
 ## ✅ Key Benefits
 
