@@ -32,11 +32,7 @@ Traditional ID generators like MongoDB’s ObjectId or MySQL’s AUTO_INCREMENT 
 
 
 ## When to Use Oriid
-✅ High-frequency systems (e.g., logs, telemetry)
-✅ Real-time services (e.g., transactions, orders)
-✅ Sharded environments
-✅ Offline-safe ID generation
-✅ Short URLs or file names
+Oriid is ideal for high-frequency systems such as logs and telemetry, real-time services like transactions or orders, and sharded environments where coordination is difficult. It also works well for offline-safe ID generation and use cases requiring short, URL-friendly IDs such as short URLs or file names.
 
 
 How many unique 10-character IDs can be generated using a-z, A-Z, 0-9?
