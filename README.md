@@ -31,6 +31,14 @@ Traditional ID generators like MongoDB’s ObjectId or MySQL’s AUTO_INCREMENT 
 - **Fast enough for real-time analytics, logs, and microservices**
 
 
+## When to Use Oriid
+✅ High-frequency systems (e.g., logs, telemetry)
+✅ Real-time services (e.g., transactions, orders)
+✅ Sharded environments
+✅ Offline-safe ID generation
+✅ Short URLs or file names
+
+
 How many unique 10-character IDs can be generated using a-z, A-Z, 0-9?
 
 ✅ How many unique IDs are possible with 10 characters?
@@ -61,3 +69,27 @@ No, 10 characters is still more than enough for generating 20M/sec for over a th
 
 ✅ Conclusion
 You can generate 10-character IDs at 2M/sec for over 13,000 years before exhausting all combinations. You're extremely safe.
+
+
+🧯 Memory Usage
+Oriid: Very low, GC-safe (non-cryptographic)
+No heap leaks or bloat observed even after 1 billion IDs
+
+
+🆚 Why Not Mongo ObjectId?
+
+* MongoDB ObjectIds are **24-character hex strings** → **larger storage & URLs**
+* Oriid IDs are **shorter, alphanumeric**, and **URL-safe**
+* No database dependency or cluster configuration required
+
+🆚 Why Not MySQL AUTO\_INCREMENT?
+
+* MySQL’s auto-increment requires a **database roundtrip**
+* It’s **not globally unique** (dangerous in distributed setups)
+* Can't be safely merged across servers
+
+Oriid solves these by being:
+
+* In-memory
+* Globally unique (based on time + counter)
+* Independent of DB locks or sequences
