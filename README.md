@@ -1,3 +1,8 @@
+
+
+
+
+
 # Oriid – Ultra-Fast, Collision-Free Unique ID Generator
 
 **Oriid** is a blazing-fast, high-throughput JavaScript library for generating **unique, 10-character alphanumeric IDs** at a rate of **20 million+ per second**, using only the characters `a-z`, `A-Z`, and `0-9`.
