@@ -1,7 +1,4 @@
-
-
-
-
+![Oriid Benchmark Chart](https://raw.githubusercontent.com/JalsonicNetworks/Oriid/refs/heads/main/oriId.png)
 
 # Oriid – Ultra-Fast, Collision-Free Unique ID Generator
 
@@ -34,3 +31,33 @@ Traditional ID generators like MongoDB’s ObjectId or MySQL’s AUTO_INCREMENT 
 - **Fast enough for real-time analytics, logs, and microservices**
 
 
+How many unique 10-character IDs can be generated using a-z, A-Z, 0-9?
+
+✅ How many unique IDs are possible with 10 characters?
+
+For 10-character IDs, each character has 62 possibilities:
+
+$$
+62^{10} = 839,299,365,868,340,224
+$$
+
+That’s:
+**\~839.3 quadrillion** unique IDs.
+
+### ✅ How Long Would That Last?
+
+At **2 million IDs/second**:
+
+$$
+\frac{839,299,365,868,340,224}{2,000,000} = 419,649,682,934 \text{ seconds}
+$$
+
+$$
+\approx 13,305 \text{ years}
+$$
+
+Do You Need to Increase ID Length?
+No, 10 characters is still more than enough for generating 20M/sec for over a thousand years.
+
+✅ Conclusion
+You can generate 10-character IDs at 2M/sec for over 13,000 years before exhausting all combinations. You're extremely safe.
