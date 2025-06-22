@@ -21,7 +21,7 @@ Traditional ID generators like MongoDB’s ObjectId or MySQL’s AUTO_INCREMENT 
 | Distributed-safe         | ✅ Yes       | ⚠️ Needs config   | ❌ Hard to scale |
 
 
-## ✅ Key Benefits
+✅ Key Benefits
 
 - **10+ character compact IDs**
 - **Base62 encoding** (a–z, A–Z, 0–9)
@@ -44,7 +44,7 @@ $$
 That’s:
 **\~839.3 quadrillion** unique IDs.
 
-### ✅ How Long Would That Last?
+✅ How Long Would That Last?
 
 At **2 million IDs/second**:
 
