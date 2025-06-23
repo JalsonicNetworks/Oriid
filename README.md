@@ -72,6 +72,10 @@ Details:
 
 🔍 Verify Oriid
 
+```js 
+verifyOriid(id: string): boolean
+```
+
 ```js
 import { oriid, verifyOriid } from 'oriid';
 
@@ -80,10 +84,6 @@ console.log(id); // Example: "aP9Tx8LmQz"
 
 console.log(verifyOriid(id)); // true
 console.log(verifyOriid("bad-id")); // false
-```
-
-```js 
-verifyOriid(id: string): boolean
 ```
 
 Checks whether a given string is a valid Oriid.

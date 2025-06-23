@@ -1,6 +1,6 @@
 {
   "name": "oriid",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Oriid – Ultra-Fast, Collision-Free Unique ID Generator",
   "main": "index.js",
   "scripts": {
@@ -37,11 +37,5 @@
   "files": [
     "index.js",
     "README.md"
-  ],
-  "dependencies": {
-    "oriid": "^1.0.3"
-  },
-  "devDependencies": {
-    "tsx": "^4.20.3"
-  }
+  ]
 }
