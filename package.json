@@ -1,7 +1,7 @@
 {
   "name": "oriid",
-  "version": "1.0.0",
-  "description": "![Oriid Benchmark Chart](https://raw.githubusercontent.com/JalsonicNetworks/Oriid/refs/heads/main/oriId.png)",
+  "version": "1.0.3",
+  "description": "Oriid – Ultra-Fast, Collision-Free Unique ID Generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,38 @@
     "type": "git",
     "url": "git+https://github.com/JalsonicNetworks/Oriid.git"
   },
-  "keywords": [],
+  "keywords": [
+    "id",
+    "unique-id",
+    "uuid",
+    "shortid",
+    "nanoid",
+    "id-generator",
+    "random-id",
+    "base62",
+    "fast-id",
+    "custom-id",
+    "short-uuid",
+    "identifier",
+    "high-performance",
+    "javascript",
+    "nodejs",
+    "oriid"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JalsonicNetworks/Oriid/issues"
   },
-  "homepage": "https://github.com/JalsonicNetworks/Oriid#readme"
+  "homepage": "https://github.com/JalsonicNetworks/Oriid#readme",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "oriid": "^1.0.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3"
+  }
 }

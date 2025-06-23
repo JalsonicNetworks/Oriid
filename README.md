@@ -31,6 +31,47 @@ Traditional ID generators like MongoDB’s ObjectId or MySQL’s AUTO_INCREMENT 
 - **Fast enough for real-time analytics, logs, and microservices**
 
 
+## 📦 Installation
+
+```bash
+npm install oriid
+```
+
+🚀 Quick Start
+
+```js
+import { oriid } from "oriid";
+
+let OrderTrackingId = oriid(); // Example: "aX8rT9LpQv"
+```
+
+🔍 Example Output
+
+```js
+console.log(oriid()); // "bQ9xLpZrKd"
+console.log(oriid()); // "Xv4Kp9AmR2"
+console.log(oriid()); // "af9RWxLpO0"
+```
+
+This returns a unique 10-character ID, safe for use in:
+URLs - File names - Offline devices - High-performance services
+
+
+📚 API Reference
+
+```js
+ oriid(): string
+```
+
+Returns a new **unique 10-character alphanumeric string**.
+
+Details:
+**Type**: `Function`
+**Returns**: `string` – 10-character ID
+**Alphabet**: `a–z`, `A–Z`, `0–9`
+**Safe for**: URLs, filenames, logs, offline use
+
+
 ## When to Use Oriid
 Oriid is ideal for high-frequency systems such as logs and telemetry, real-time services like transactions or orders, and sharded environments where coordination is difficult. It also works well for offline-safe ID generation and use cases requiring short, URL-friendly IDs such as short URLs or file names.
 
@@ -89,3 +130,11 @@ Oriid solves these by being:
 * In-memory
 * Globally unique (based on time + counter)
 * Independent of DB locks or sequences
+
+
+
+**Reporting Bugs**
+If you find an issue with EasyCSS, please report it via the GitHub issue tracker and via E-mail : github@jalsonic.com. 
+
+Designed, Built and Maintained by [Imran Amanat](https://www.imranamanat.com) imran@imranamanat.com and [Jalsonic Networks Teams](https://www.jalsonic.com) 2025. 
+A Division of [Jalsonic Networks](http://jalsonic.com) 2025.
