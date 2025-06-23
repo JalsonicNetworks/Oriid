@@ -1,0 +1,20 @@
+{
+  "name": "oriid",
+  "version": "1.0.0",
+  "description": "![Oriid Benchmark Chart](https://raw.githubusercontent.com/JalsonicNetworks/Oriid/refs/heads/main/oriId.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JalsonicNetworks/Oriid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JalsonicNetworks/Oriid/issues"
+  },
+  "homepage": "https://github.com/JalsonicNetworks/Oriid#readme"
+}
