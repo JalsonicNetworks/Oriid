@@ -99,6 +99,11 @@ verifyOriid("toolong12345"); // false
 ```
 
 ## When to Use Oriid
+
+
+![Oriid Chart](https://raw.githubusercontent.com/JalsonicNetworks/Oriid/refs/heads/main/dia.gif)
+
+
 Oriid is ideal for high-frequency systems such as logs and telemetry, real-time services like transactions or orders, and sharded environments where coordination is difficult. It also works well for offline-safe ID generation and use cases requiring short, URL-friendly IDs such as short URLs or file names.
 
 
