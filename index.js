@@ -72,6 +72,15 @@ export function oriid() {
   return generateUniqueId();
 }
 
+/**
+ * Verifies if a given string is a valid Oriid.
+ * @param {string} id - The ID to verify
+ * @returns {boolean} - True if valid, false otherwise
+ */
+export function verifyOriid(id) {
+  const regex = /^[a-zA-Z0-9]{10}$/;
+  return regex.test(id);
+}
 
 
 export default oriid;

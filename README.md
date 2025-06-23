@@ -56,7 +56,6 @@ console.log(oriid()); // "af9RWxLpO0"
 This returns a unique 10-character ID, safe for use in:
 URLs - File names - Offline devices - High-performance services
 
-
 📚 API Reference
 
 ```js
@@ -71,6 +70,33 @@ Details:
 **Alphabet**: `a–z`, `A–Z`, `0–9`
 **Safe for**: URLs, filenames, logs, offline use
 
+🔍 Verify Oriid
+
+```js
+import { oriid, verifyOriid } from 'oriid';
+
+const id = oriid();
+console.log(id); // Example: "aP9Tx8LmQz"
+
+console.log(verifyOriid(id)); // true
+console.log(verifyOriid("bad-id")); // false
+```
+
+```js 
+verifyOriid(id: string): boolean
+```
+
+Checks whether a given string is a valid Oriid.
+
+- ✅ Must be exactly 10 characters
+- ✅ Only a–z, A–Z, 0–9 allowed
+
+```js
+verifyOriid("aP9Tx8LmQz"); // true
+verifyOriid("1234567890"); // true
+verifyOriid("bad-id!");    // false
+verifyOriid("toolong12345"); // false
+```
 
 ## When to Use Oriid
 Oriid is ideal for high-frequency systems such as logs and telemetry, real-time services like transactions or orders, and sharded environments where coordination is difficult. It also works well for offline-safe ID generation and use cases requiring short, URL-friendly IDs such as short URLs or file names.
